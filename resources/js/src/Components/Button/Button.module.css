@@ -1,0 +1,42 @@
+.Button {
+    margin: 1rem;
+}
+
+.Button button {
+    padding: 1rem;
+    font-size: 1.4rem;
+    width: 100%;
+    color: white;
+    border-radius: .4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.default {
+    background-color: var(--color-primary);
+}
+
+.success {
+    background-color: var(--color-blue);
+}
+
+.danger {
+    background-color: var(--color-danger);
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.Issue {
+    padding: 2rem;
+    border-radius: .25rem;
+    background-color: var(--color-success);
+    border: 1px solid green;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}

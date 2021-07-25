@@ -1,0 +1,27 @@
+.icon-left {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.icon-right {
+    margin-left: 1rem;
+    font-size: 2rem;
+    fill: white;
+}
+
+.icon-green {
+    font-size: 2rem;
+    fill: var(--color-success);
+    margin: .5rem;
+}
+
+.icon-yellow {
+    font-size: 2rem;
+    fill: var(--color-warning);
+    margin: .5rem;
+}
+
+.icon-white{
+    font-size: 2rem;
+    fill: white;
+}

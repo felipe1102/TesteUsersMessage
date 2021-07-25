@@ -1,0 +1,108 @@
+*, a, ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-dark);
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 1.5rem 1rem;
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.3rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+label {
+    color: var(--color-light-dark);
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+input[type=radio] {
+    margin: 1rem;
+}
+
+input:disabled {
+    background-color: var(--color-grey);
+    font-weight: bold;
+}
+
+textarea::placeholder {
+    color: lightgrey;
+}
+
+label {
+    margin-right: 2rem;
+}
+
+hr {
+    border-color: #a0a0a0;
+    margin: 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table a {
+    color: var(--color-primary);
+    font-weight:bold;
+}
+
+table a:hover {
+    filter: brightness(50%);
+}
+
+@media(max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+    }
+
+}
