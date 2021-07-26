@@ -23,7 +23,7 @@ Rode os comandos:
 <br>npm install
 
 Execultar sistema em prompts diferentes
-<br>php artisa serve
+<br>php artisan serve
 <br>npm rum watch
 
 Nome do arquivo com as rotas para postman
