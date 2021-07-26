@@ -17,12 +17,14 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
+
         $users = User::where('status', 1);
         if($request->name){
-            $users = $users->where("name", 'like', '%'.$request->name.'%');
+            $users = $users->where('name', 'LIKE', '%'.$request->name.'%');
         }
-        if($request->name){
-            $users = $users->where("email", $request->email);
+
+        if($request->email){
+            $users = $users->where("email", 'LIKE', '%'.$request->email.'%');
         }
         if($request->type){
             $users = $users->where("type", $request->type);

@@ -1,0 +1,18 @@
+.System > div:last-child {
+    display: flex;
+}
+
+.System > div > div:last-child {
+    flex: 4.5;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+}
+
+@media(max-width: 768px) {
+
+    .System > div:last-child {
+        flex-direction: column;
+    }
+
+}

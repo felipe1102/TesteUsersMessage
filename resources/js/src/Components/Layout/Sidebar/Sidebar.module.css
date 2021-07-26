@@ -1,0 +1,102 @@
+.Sidebar {
+    background-color: var(--color-primary);
+    min-height: 100vh;
+    min-width: 200px;
+    flex: 1;
+    border-radius: 0 .7rem 0 0;
+}
+
+.Sidebar > div {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sidebar ul li {
+    position: relative;
+}
+
+.Sidebar ul li a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    padding: .9rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.Sidebar ul li button {
+    display: block;
+    color: white;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    background-color: transparent;
+    width: 100%;
+    text-align: start;
+}
+
+.Icon {
+    fill: var(--white);
+    margin-right: 1rem;
+}
+
+.Sidebar ul li a:hover {
+    position: relative;
+    z-index: 2;
+    margin-left: 1.5rem!important;
+    font-weight: bold;
+    background: var(--color-blue);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+.Sidebar div:first-child {
+   padding: 2rem;
+}
+
+.LinkActive {
+    background: var(--color-blue);
+    border-bottom: 1px solid var(--color-dark);
+    width: 100%;
+}
+
+.subMenu {
+    margin-left: 2.5rem;
+}
+
+.Menu {
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.Menu:hover {
+    font-weight: bold;
+    background: var(--color-blue);
+    margin-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 950px) {
+
+    .Sidebar {
+        background-color: var(--color-primary);
+        flex: 1;
+        min-height: 0;
+    }
+
+    .Sidebar ul li:hover {
+        margin-left: 0;
+    }
+
+    .Sidebar ul li a:hover {
+        margin-left: 0;
+    }
+}

@@ -3,7 +3,6 @@ import * as actionTypes from '../Actions/actionsTypes';
 const initalState = {
     token: null,
     userId: null,
-    userName: null,
     email: null,
     userType: null,
     error: null,

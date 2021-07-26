@@ -1,0 +1,19 @@
+.Select {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.Select select {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid lightgrey;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.Select label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}

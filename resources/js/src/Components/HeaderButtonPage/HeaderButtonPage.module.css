@@ -1,0 +1,52 @@
+.Back {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Back > div {
+    flex: 1;
+}
+
+.Back > div:first-child > div >button{
+    max-width: 63px;
+}
+
+.Back h2 {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Icon {
+    fill: white;
+    font-size: 2.5rem;
+}
+
+.Back button {
+    width: 150px;
+    margin-bottom: 1rem;
+    padding: 1.7rem!important;
+    font-size: 2rem;
+    border-radius: 50% !important;
+}
+
+@media(max-width: 500px){
+    .Back button {
+        width: 80vw;
+    }
+
+    .Back {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+    .HeaderStoreButton {
+        justify-content: center;
+    }
+    .HeaderStoreButton button {
+        width: 90vw;
+    }
+}

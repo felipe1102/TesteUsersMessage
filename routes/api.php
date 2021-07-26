@@ -18,7 +18,7 @@ use App\Http\Controllers\UserController;
 Route::prefix('v1')->group(function () {
     Route::post("/login", [AuthController::class, 'login']);
     Route::middleware(['auth:sanctum'])->group(function () {
-        Route::post("/logout", [AuthController::class, 'logout']);
+        Route::delete("/logout", [AuthController::class, 'logout']);
         Route::prefix('user')->group(function () {
             Route::get("/", [UserController::class, 'index']);
             //webhook cadastro de usuario

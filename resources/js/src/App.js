@@ -5,7 +5,7 @@ import { authCheckState } from "./Store/Actions";
 import Spinner from "./Components/Spinner/Spinner";
 
 const Login = React.lazy(()=>import("./Pages/Login/Login"));
-const System = React.lazy(()=>import("./Pages/System/User/User"));
+const System = React.lazy(()=>import("./Pages/System"));
 
 const App = props => {
 

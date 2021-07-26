@@ -11,27 +11,19 @@ const Login = props =>{
     const [user, setUser] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
-
 
     const handlerSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        try {
-            props.onAuth(user, password);
-        } catch(e) {
-            setError(true);
-            setLoading(false);
-        }
+        props.onAuth(user, password);
+        setLoading(false);
     }
 
     const setPasswordChange = e => {
-        setError(false);
         setPassword(e.target.value);
     }
 
     const setUserChange = e => {
-        setError(false);
         setUser(e.target.value);
     }
 
@@ -54,7 +46,7 @@ const Login = props =>{
                     value={password}
                     onChange={setPasswordChange}
                 />
-                {error ? <Message type={'error'}>Usuário ou senha incorretos</Message> : null}
+                {props.error ? <Message type={'error'}>{props.error}</Message> : null}
                 <Button>Entrar {loading ? <Spinner size={'small'} /> : null}</Button>
             </form>
         </div>

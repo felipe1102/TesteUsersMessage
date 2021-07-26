@@ -16,18 +16,17 @@ export const authFail = (error) => {
 export const authSuccess = (
     token,
     userId,
-    store_id,
     name,
     email,
     userType
+
 ) => {
     return {
         type: actionTypes.AUTH_SUCCESS,
         token,
         userId,
-        store_id,
-        name,
         email,
+        name,
         userType
     }
 }
@@ -82,19 +81,20 @@ export const auth = (user, password) => {
 export const logout = (token = null) =>  {
     return dispatch => {
         dispatch(logoutStart());
-
         if(token !== null) {
-            sessionStorage.clear();
             axios.delete('/api/v1/logout', {
                 headers: {
                     Authorization: "Bearer " + token
                 }
             }).then(meResponse => {
+                sessionStorage.clear();
                 dispatch(logoutSuccess())
             }).catch(err => {
+                sessionStorage.clear();
                 dispatch(logoutSuccess())
             });
         } else {
+            sessionStorage.clear();
             dispatch(logoutSuccess())
         }
     };

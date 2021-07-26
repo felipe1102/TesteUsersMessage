@@ -16,11 +16,12 @@
 
 .labels {
     display: flex;
+    color: var(--color-grey);
     justify-content: space-between;
 }
 
 .Input input::placeholder {
-    color: var(--color-light-grey);
+    color: var(--color-grey);
 }
 
 .Input input:focus {

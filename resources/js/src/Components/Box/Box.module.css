@@ -1,0 +1,13 @@
+.Box {
+    border: 3px solid lightgrey;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+.small {
+    max-width: 350px;
+}
+
+.medium {
+    max-width: 500px;
+}

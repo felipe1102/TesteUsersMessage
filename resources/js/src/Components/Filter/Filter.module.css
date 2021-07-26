@@ -1,0 +1,16 @@
+.Filter {
+    box-sizing: border-box;
+    padding: 2rem;
+    /*margin: 2rem 0;*/
+  /*  border-radius: 1rem;*/
+    border-radius: 1rem;
+    background-color: var(--color-light-grey2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.Filter label {
+    color: black;
+}

@@ -25,9 +25,13 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
+        "react-bootstrap": "^1.6.1",
+        "react-bootstrap-sweetalert": "^5.2.0",
         "react-icons": "^4.2.0",
+        "react-js-pagination": "^3.0.3",
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
+        "react-table": "^7.7.0",
         "redux": "^4.1.0",
         "redux-thunk": "^2.3.0"
     }

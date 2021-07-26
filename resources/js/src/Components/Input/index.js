@@ -22,18 +22,6 @@ const Input = (props) => {
                 type={props.type}
                 required={props.required}
                 placeholder={props.placeholder}
-                /*
-                id={props.id}
-                min={props.min}
-                max={props.max}
-                minLength={props.minLength}
-                maxLength={props.maxLength}
-                onBlur={props.onBlur}
-
-                defaultChecked={props.defaultChecked}
-                checked={props.checked}
-                mask={props.mask}
-                disabled={props.disabled}*/
             />
         </div>
     );
